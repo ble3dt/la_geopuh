@@ -20,7 +20,17 @@ ThemeData darkTheme = ThemeData(
     ));
 
 TextStyle labelStyle = const TextStyle(
-    fontFamily: 'Open Sans', fontSize: 16, fontWeight: FontWeight.w500);
+    fontFamily: 'Open Sans', fontSize: 16, fontWeight: FontWeight.w500, color: regular);
+
+TextStyle buttonTextStyle = const TextStyle(
+    fontFamily: 'Open Sans', fontSize: 16, fontWeight: FontWeight.w500, color: foreground);
+
+TextStyle transparentLabelStyle = TextStyle(
+    fontFamily: 'Open Sans', fontSize: 16, fontWeight: FontWeight.w500, color: regular.withOpacity(0.6));
 
 TextStyle headerStyle = const TextStyle(
     fontFamily: 'Open Sans', fontSize: 30, fontWeight: FontWeight.w600);
+
+ButtonStyle accentButton = const ButtonStyle(
+  backgroundColor: MaterialStatePropertyAll(regular),
+);
