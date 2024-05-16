@@ -20,16 +20,54 @@ ThemeData darkTheme = ThemeData(
     ));
 
 TextStyle labelStyle = const TextStyle(
-    fontFamily: 'Open Sans', fontSize: 16, fontWeight: FontWeight.w500, color: regular);
+  fontFamily: 'Open Sans',
+  fontSize: 16,
+  fontWeight: FontWeight.w500,
+  color: regular,
+  overflow: TextOverflow.ellipsis,
+);
+
+TextStyle costStyle = const TextStyle(
+  fontFamily: 'Open Sans',
+  fontSize: 16,
+  fontWeight: FontWeight.w700,
+  color: accent_3,
+  overflow: TextOverflow.ellipsis,
+);
+
+TextStyle strikeStyle = TextStyle(
+  fontFamily: 'Open Sans',
+  fontSize: 16,
+  fontWeight: FontWeight.w500,
+  color: regular.withOpacity(0.6),
+  decoration: TextDecoration.lineThrough,
+  decorationColor: regular.withOpacity(0.6),
+  decorationThickness: 5.0,
+  overflow: TextOverflow.ellipsis,
+);
 
 TextStyle buttonTextStyle = const TextStyle(
-    fontFamily: 'Open Sans', fontSize: 16, fontWeight: FontWeight.w500, color: foreground);
+  fontFamily: 'Open Sans',
+  fontSize: 16,
+  fontWeight: FontWeight.w500,
+  color: foreground,
+  overflow: TextOverflow.ellipsis,
+);
 
 TextStyle transparentLabelStyle = TextStyle(
-    fontFamily: 'Open Sans', fontSize: 16, fontWeight: FontWeight.w500, color: regular.withOpacity(0.6));
+  fontFamily: 'Open Sans',
+  fontSize: 16,
+  fontWeight: FontWeight.w500,
+  color: regular.withOpacity(0.6),
+  overflow: TextOverflow.ellipsis,
+);
 
 TextStyle headerStyle = const TextStyle(
-    fontFamily: 'Open Sans', fontSize: 30, fontWeight: FontWeight.w600);
+  fontFamily: 'Open Sans',
+  fontSize: 30,
+  fontWeight: FontWeight.w600,
+  overflow: TextOverflow.ellipsis,
+);
 
 ButtonStyle accentButton = const ButtonStyle(
   backgroundColor: MaterialStatePropertyAll(regular),
