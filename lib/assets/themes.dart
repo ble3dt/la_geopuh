@@ -66,6 +66,7 @@ TextStyle headerStyle = const TextStyle(
   fontFamily: 'Open Sans',
   fontSize: 30,
   fontWeight: FontWeight.w600,
+  color: regular,
   overflow: TextOverflow.ellipsis,
 );
 

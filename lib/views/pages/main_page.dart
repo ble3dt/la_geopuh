@@ -1,6 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:la_geopuh/assets/colors.dart';
+import 'package:la_geopuh/views/pages/item_page.dart';
 import 'package:la_geopuh/views/widgets/item_card.dart';
 
 class MainPage extends StatefulWidget {
@@ -22,15 +24,16 @@ class _MainPageState extends State<MainPage> {
             );
           } else {
             return GridView.builder(
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  childAspectRatio: (1 / 1.5),
-                  crossAxisCount: 2,
-                ),
-                physics: const BouncingScrollPhysics(),
-                itemCount: snapshot.data!.docs.length,
-                shrinkWrap: true,
-                itemBuilder: (context, index) =>
-                    itemCard(context, snapshot.data!.docs[index]));
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                childAspectRatio: (1 / 1.5),
+                crossAxisCount: 2,
+              ),
+              physics: const BouncingScrollPhysics(),
+              itemCount: snapshot.data!.docs.length,
+              shrinkWrap: true,
+              itemBuilder: (context, index) =>
+                  itemCard(context, snapshot.data!.docs[index]),
+            );
           }
         });
   }

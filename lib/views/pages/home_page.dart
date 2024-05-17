@@ -24,7 +24,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: searchBar,
+      appBar: searchBar(null, null),
       body: pageList[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         items: const [
