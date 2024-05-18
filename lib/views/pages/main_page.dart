@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:la_geopuh/assets/colors.dart';
-import 'package:la_geopuh/views/pages/item_page.dart';
 import 'package:la_geopuh/views/widgets/item_card.dart';
 
 class MainPage extends StatefulWidget {

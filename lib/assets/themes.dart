@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:la_geopuh/assets/colors.dart';
 
 ThemeData darkTheme = ThemeData(
@@ -70,6 +71,19 @@ TextStyle headerStyle = const TextStyle(
   overflow: TextOverflow.ellipsis,
 );
 
+TextStyle accentHeaderStyle = const TextStyle(
+  fontFamily: 'Open Sans',
+  fontSize: 30,
+  fontWeight: FontWeight.w600,
+  color: accent_3,
+  overflow: TextOverflow.ellipsis,
+);
+
 ButtonStyle accentButton = const ButtonStyle(
-  backgroundColor: MaterialStatePropertyAll(regular),
+  backgroundColor: WidgetStatePropertyAll(regular),
+);
+
+ButtonStyle accentButton_2 = const ButtonStyle(
+  padding: WidgetStatePropertyAll(EdgeInsets.all(10)),
+  backgroundColor: WidgetStatePropertyAll(accent_2),
 );

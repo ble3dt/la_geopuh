@@ -23,7 +23,7 @@ Widget itemCard(context, dynamic docs) => Padding(
                   borderRadius: const BorderRadius.vertical(
                       top: Radius.circular(10), bottom: Radius.zero),
                   child: Image(
-                    width: MediaQuery.of(context).size.width * 0.5,
+                    width: MediaQuery.of(context).size.width * 1,
                     height: MediaQuery.of(context).size.width * 0.5,
                     fit: BoxFit.cover,
                     image: NetworkImage(docs['image']),
