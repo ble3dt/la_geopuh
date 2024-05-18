@@ -63,6 +63,14 @@ TextStyle transparentLabelStyle = TextStyle(
   overflow: TextOverflow.ellipsis,
 );
 
+TextStyle transparentLabelStyle_12 = TextStyle(
+  fontFamily: 'Open Sans',
+  fontSize: 12,
+  fontWeight: FontWeight.w500,
+  color: regular.withOpacity(0.6),
+  overflow: TextOverflow.ellipsis,
+);
+
 TextStyle headerStyle = const TextStyle(
   fontFamily: 'Open Sans',
   fontSize: 30,
@@ -79,11 +87,21 @@ TextStyle accentHeaderStyle = const TextStyle(
   overflow: TextOverflow.ellipsis,
 );
 
+// ButtonStyle accentButton = const ButtonStyle(
+//   backgroundColor: WidgetStatePropertyAll(regular),
+// );
+//
+// ButtonStyle accentButton_2 = const ButtonStyle(
+//   padding: WidgetStatePropertyAll(EdgeInsets.all(10)),
+//   backgroundColor: WidgetStatePropertyAll(accent_2),
+// );
+
 ButtonStyle accentButton = const ButtonStyle(
-  backgroundColor: WidgetStatePropertyAll(regular),
+  backgroundColor: MaterialStatePropertyAll(regular),
 );
 
 ButtonStyle accentButton_2 = const ButtonStyle(
-  padding: WidgetStatePropertyAll(EdgeInsets.all(10)),
-  backgroundColor: WidgetStatePropertyAll(accent_2),
+  padding: MaterialStatePropertyAll(EdgeInsets.all(10)),
+  backgroundColor: MaterialStatePropertyAll(accent_2),
 );
+

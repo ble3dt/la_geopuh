@@ -65,24 +65,35 @@ class _ItemPageState extends State<ItemPage> {
                 padding: const EdgeInsets.all(20.0),
                 child: Column(
                   children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(widget.docs["name"], style: headerStyle),
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width * 0.5,
+                          child: Text(widget.docs["name"], style: headerStyle, overflow: TextOverflow.visible,),
+                        ),
+                        Divider(
+                          color: regular.withOpacity(0.3),
+                        ),
                         Row(
                           children: [
                             Text(
-                                "${(double.parse(widget.docs["cost"]) - (double.parse(widget.docs["cost"]) * double.parse(widget.docs["discount"])) / 100).floor()} Р.\t",
-                                style: headerStyle),
+                              "${(double.parse(widget.docs["cost"]) - (double.parse(widget.docs["cost"]) * double.parse(widget.docs["discount"])) / 100).floor()} Р.\t",
+                              style: headerStyle,
+                            ),
                             Text("-${widget.docs["discount"]}%",
                                 style: accentHeaderStyle),
                           ],
                         ),
                       ],
                     ),
+                    Divider(
+                      color: regular.withOpacity(0.3),
+                    ),
                     Text(
                       "${widget.docs["description"]}",
                       style: transparentLabelStyle,
+                      overflow: TextOverflow.visible,
                     )
                   ],
                 ),

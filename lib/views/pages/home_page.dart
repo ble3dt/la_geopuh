@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:la_geopuh/views/pages/basket_page.dart';
-import 'package:la_geopuh/views/pages/favorite_page.dart';
 import 'package:la_geopuh/views/pages/main_page.dart';
 import 'package:la_geopuh/views/pages/profile_page.dart';
 import 'package:la_geopuh/views/widgets/search_bar.dart';
@@ -16,7 +15,6 @@ class _HomePageState extends State<HomePage> {
   int currentIndex = 0;
   final pageList = const [
     MainPage(),
-    FavoritePage(),
     BasketPage(),
     ProfilePage(),
   ];
@@ -30,8 +28,6 @@ class _HomePageState extends State<HomePage> {
         items: const [
           BottomNavigationBarItem(
               label: "Главная", icon: Icon(Icons.home_rounded)),
-          BottomNavigationBarItem(
-              label: "Избранное", icon: Icon(Icons.favorite_rounded)),
           BottomNavigationBarItem(
               label: "Корзина", icon: Icon(Icons.shopping_basket_rounded)),
           BottomNavigationBarItem(

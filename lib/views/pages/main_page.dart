@@ -30,8 +30,12 @@ class _MainPageState extends State<MainPage> {
               physics: const BouncingScrollPhysics(),
               itemCount: snapshot.data!.docs.length,
               shrinkWrap: true,
-              itemBuilder: (context, index) =>
-                  itemCard(context, snapshot.data!.docs[index]),
+              itemBuilder: (context, index) => snapshot.data == null
+                  ? const Center(
+                      child: CircularProgressIndicator(
+                      color: accent_2,
+                    ))
+                  : itemCard(context, snapshot.data!.docs[index]),
             );
           }
         });

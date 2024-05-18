@@ -5,6 +5,7 @@ import 'package:la_geopuh/views/pages/basket_page.dart';
 import 'package:la_geopuh/views/pages/favorite_page.dart';
 import 'package:la_geopuh/views/pages/home_page.dart';
 import 'package:la_geopuh/views/pages/item_page.dart';
+import 'package:la_geopuh/views/pages/profile_editing_page.dart';
 import 'package:la_geopuh/views/pages/profile_page.dart';
 import 'package:la_geopuh/views/pages/regist_page.dart';
 
@@ -18,4 +19,6 @@ final routes = {
   "/profile": (context) => const ProfilePage(),
   "/item": (context) =>
       ItemPage(docs: ModalRoute.of(context)?.settings.arguments),
+  "/profile_editing": (context) =>
+      ProfileEditor(docs: ModalRoute.of(context)?.settings.arguments),
 };
