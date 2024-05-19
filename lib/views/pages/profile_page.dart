@@ -1,12 +1,11 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:la_geopuh/assets/colors.dart';
 import 'package:la_geopuh/assets/themes.dart';
 import 'package:la_geopuh/data/firebase_firestore/profile_collection.dart';
 import 'package:la_geopuh/views/widgets/icon_box.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+
 
 final collectionReference = FirebaseFirestore.instance.collection("profiles");
 
@@ -115,7 +114,9 @@ class _ProfilePageState extends State<ProfilePage> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         GestureDetector(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.pushNamed(context, "/fav");
+                            },
                             child: iconBox(
                                 context,
                                 Icons.favorite_outline_rounded,

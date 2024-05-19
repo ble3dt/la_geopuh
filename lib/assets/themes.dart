@@ -105,3 +105,8 @@ ButtonStyle accentButton_2 = const ButtonStyle(
   backgroundColor: MaterialStatePropertyAll(accent_2),
 );
 
+ButtonStyle accentButton_3 = const ButtonStyle(
+  padding: MaterialStatePropertyAll(EdgeInsets.all(10)),
+  backgroundColor: MaterialStatePropertyAll(accent_3),
+);
+
