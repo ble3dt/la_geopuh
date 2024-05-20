@@ -197,7 +197,8 @@ class _ItemPageState extends State<ItemPage> {
                     ],
                   ),
                 ),
-              )
+              ),
+              const SizedBox(height: 10),
             ],
           ),
         ),

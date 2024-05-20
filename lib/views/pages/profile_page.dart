@@ -38,7 +38,7 @@ class _ProfilePageState extends State<ProfilePage> {
 
   ProfileCollection profileCollection = ProfileCollection();
 
-  getUserById() async {
+  initial() async {
     final DocumentSnapshot documentSnapshot =
         await collectionReference.doc(userId).get();
     counter = await countFavsForUser(userId);
@@ -49,7 +49,7 @@ class _ProfilePageState extends State<ProfilePage> {
 
   @override
   void initState() {
-    getUserById();
+    initial();
     super.initState();
   }
 

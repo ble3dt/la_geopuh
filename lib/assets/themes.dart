@@ -30,7 +30,7 @@ TextStyle labelStyle = const TextStyle(
 
 TextStyle costStyle = const TextStyle(
   fontFamily: 'Open Sans',
-  fontSize: 16,
+  fontSize: 14,
   fontWeight: FontWeight.w700,
   color: accent_3,
   overflow: TextOverflow.ellipsis,
@@ -38,7 +38,7 @@ TextStyle costStyle = const TextStyle(
 
 TextStyle strikeStyle = TextStyle(
   fontFamily: 'Open Sans',
-  fontSize: 16,
+  fontSize: 14,
   fontWeight: FontWeight.w500,
   color: regular.withOpacity(0.6),
   decoration: TextDecoration.lineThrough,
